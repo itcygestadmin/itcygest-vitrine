@@ -1,0 +1,39 @@
+.about-container {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-content {
+    width: 80vw;
+    max-width: 1200px; /* Pour éviter que ça devienne trop large sur très grands écrans */
+    text-align: justify;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  /* Pour les écrans mobiles : rétrécir un peu plus */
+  @media (max-width: 600px) {
+    .about-content {
+      width: 90vw;
+      padding: 20px;
+    }
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #002b5c;
+  }
+  
+  .about-content p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  

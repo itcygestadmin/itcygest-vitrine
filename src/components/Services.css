@@ -1,0 +1,127 @@
+
+.service-section {
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Grille responsive des services */
+.service-grid {
+  display: grid;
+  font-family: 'Segoe UI', sans-serif;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Carte de service */
+.service-card {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 1.5rem;
+  /*transition: transform 0.3s ease;*/
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+}
+.service-card:hover {
+ 
+  transform: translateY(-5px);
+
+}
+
+/* Image */
+.product-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* Titre */
+.service-name {
+  font-size: 1.4rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #0d47a1;
+  margin-bottom: 0.8rem;
+}
+
+/* Description (avec bullet point ligne par ligne) */
+.service-desc {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+.service-desc p {
+  margin: 0.4rem 0;
+  display: flex;
+  align-items: flex-start;
+}
+.service-desc p::before {
+  content: "•";
+  color: #0d47a1;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+}
+
+/* Arborescence des features (apparition au hover) */
+.tree-features {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  list-style: none;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  font-size: 1rem;
+  color: #333;
+  border-left: 3px solid #0d47a1;
+}
+.tree-features.show {
+  max-height: 1000px; /* suffisamment grand pour tout afficher */
+  opacity: 1;
+}
+
+.service-card:hover .tree-features {
+  max-height: 500px;
+  opacity: 1;
+}
+
+/* Chaque item de feature */
+.tree-node {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  position: relative;
+  padding-left: 1rem;
+}
+.tree-branch {
+  font-size: 1.2rem;
+  color: #0d47a1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.tree-text {
+  margin-left: 1.5rem;
+  font-size: 1.0rem;
+  line-height: 1.4;
+  color: #444;
+}
+/* Responsive adaptation */
+@media (max-width: 768px) {
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}

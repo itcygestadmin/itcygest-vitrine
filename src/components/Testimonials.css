@@ -1,0 +1,44 @@
+.testimonials-section {
+    padding: 3rem 1.5rem;
+    background-color: white;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .testimonials-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0d47a1;
+  }
+  
+  .testimonials-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-card {
+    background-color: white;
+    border-left: 5px solid #0d47a1;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    text-align: left;
+    width: 100%;
+  }
+  
+  .testimonial-feedback {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .testimonial-author {
+    font-weight: bold;
+    color: #0d47a1;
+  }
+  

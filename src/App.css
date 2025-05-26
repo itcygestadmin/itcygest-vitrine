@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+}
+
+.App {
+  padding: 50px 20px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+    color: #0d47a1;
+
+
+}
+
+p {
+  font-size: 1rem;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  
+  background-color: #2E456B;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+
+.Bouton {
+  display: block; /* S'assure qu'il s'affiche correctement */
+  margin: 20px auto; /* Centrage du bouton */
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #002b5c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.Bouton:hover {
+  background-color: #004b8d;
+}
