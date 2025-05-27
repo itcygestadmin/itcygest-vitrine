@@ -55,25 +55,59 @@
   }
   
   /* ✅ Adaptation du menu pour les écrans mobiles */
-  @media screen and (max-width: 768px) {
-    .menu-toggle {
-      display: list-item; /* ✅ Affiche le bouton menu */
-    }
-  
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      width: 100%;
-      background-color: #002b5c;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* nouvelle ligne */
-      transition: all 0.3s ease-in-out;      /* nouvelle ligne */
-    }
-  
-    .nav-links.active {
-      display: flex; /* ✅ Affiche le menu au clic */
-    }
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* s'affiche en mobile */
   }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 33.33%; /* ✅ 1/3 de l'écran */
+    height: calc(100vh - 60px);
+    background-color: rgba(255, 255, 255, 0.85); /* 👈 fond blanc semi-transparent */
+    padding: 10px 0;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    z-index: 999;
+    align-items: center; /* ✅ Centrer les liens */
+     border-bottom-right-radius: 20px; /* ✅ Coins arrondis */
+  border-top-right-radius: 20px;
+    opacity: 0; /* 👈 invisibilité au départ */
+     pointer-events: none;
+     transition: opacity 0.3s ease-in-out;
+  }
+
+  .nav-links.active {
+  display: flex;
+  opacity: 1; /* 👈 visibilité activée */
+  pointer-events: auto;
+}
+
+  .nav-links li {
+    padding: 6px 0; /* ✅ Moins d’espacement vertical */
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links li a {
+    color: #0d47a1; /* ✅ Texte bleu par défaut */
+    background-color: transparent;
+    font-size: 1rem;
+    text-align: left;
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .nav-links li a:hover {
+    background-color: #0d47a1; /* ✅ Fond bleu marine */
+    color: #ffffff;             /* ✅ Texte blanc */
+    border-radius: 4px;
+  }
+}

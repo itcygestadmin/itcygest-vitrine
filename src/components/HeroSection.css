@@ -37,3 +37,19 @@
   font-size: 1.2rem;
   line-height: 1.6;
 }
+@media screen and (max-width: 768px) {
+  .hero-section {
+    height: auto; /* 👈 Laisse le contenu déterminer la hauteur */
+    padding: 60px 20px; /* 👈 Ajoute du padding pour respirer */
+    margin-top: 60px; /* 👈 Réduit l’espace top sur mobile */
+    background-position: top;
+  }
+
+  .hero-title {
+    font-size: 2rem; /* 👈 Plus petit titre */
+  }
+
+  .hero-subtitle {
+    font-size: 1rem; /* 👈 Sous-titre lisible */
+  }
+}
