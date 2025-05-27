@@ -37,3 +37,26 @@
   .faq-box, .faq-rectangle {
     border: 2px solid #ccc; /* Ajoute une bordure pour mieux visualiser */
   }
+  @media screen and (max-width: 768px) {
+  .faq-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .faq-box {
+    max-width: 100%;
+    padding: 20px;
+    font-size: 0.95rem;
+  }
+
+  .faq-rectangle {
+    width: 90%;
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+
+  .faq-container {
+    padding: 20px 10px;
+  }
+}

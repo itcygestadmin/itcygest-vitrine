@@ -57,7 +57,7 @@
   /* ✅ Adaptation du menu pour les écrans mobiles */
   @media screen and (max-width: 768px) {
     .menu-toggle {
-      display: block; /* ✅ Affiche le bouton menu */
+      display: list-item; /* ✅ Affiche le bouton menu */
     }
   
     .nav-links {
