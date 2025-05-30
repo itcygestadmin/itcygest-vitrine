@@ -1,0 +1,67 @@
+/* ReferencesSection.css */
+.references-section {
+  padding: 2rem;
+  background-color: #f9fafb;
+}
+
+.references-container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.references-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+.references-intro {
+  color: #4b5563;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-bottom: 16px;
+  flex: 1 1 100%;
+  max-width: 48%;
+}
+
+.card-full {
+  max-width: 100%;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.card-list {
+  color: #374151;
+  padding-left: 1rem;
+}
+
+.references-footer {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.references-footer p {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #1f2937;
+}

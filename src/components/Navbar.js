@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import React from 'react'; // ✅ Ajout requis
 import { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 
@@ -39,6 +40,7 @@ function Navbar() {
       <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
         <li><Link to="/" onClick={handleLinkClick}>Home</Link></li>
         <li><Link to="/services" onClick={handleLinkClick}>Services</Link></li>
+        <li><Link to="/references" onClick={handleLinkClick}>Trust Center</Link></li>
         <li><Link to="/faq" onClick={handleLinkClick}>FAQ</Link></li>
         <li><Link to="/testimonials" onClick={handleLinkClick}>Testimonials</Link></li>
         <li><a href="/#contact" onClick={handleLinkClick}>Contact Us</a></li>

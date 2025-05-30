@@ -1,4 +1,5 @@
 import "./Faq.css";
+import React from 'react'; // ✅ Ajout requis
 
 
 

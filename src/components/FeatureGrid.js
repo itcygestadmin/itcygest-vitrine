@@ -15,7 +15,7 @@ const features = [
 export default function FeatureGrid() {
   return (
     <section className="feature-grid-section">
-      <h2 className="feature-title">What Can You Do for You?</h2>
+      <h2 className="feature-title">How Can IT Cygest Help You Succeed?</h2>
       <div className="feature-grid">
         {features.map((item, index) => (
           <div key={index} className="feature-card">
