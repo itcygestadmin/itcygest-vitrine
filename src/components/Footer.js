@@ -1,18 +1,23 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Footer.css';
 
 function Footer() {
   return (
-    <footer className="footer" id="contact">
-
-       
-        <a href="mailto:info@itcygest.com" className="contact-btn">Contact Us</a>
-        <p>
-           Email: info@itcygest.com &nbsp;&nbsp;&nbsp;&nbsp;
-           Phone: +1 514 249 7972
-        </p>
-        <p>IT Cygest Copyright © 2025. All rights reserved.</p>
-    </footer>
+<footer className="footer" id="contact">
+  <div className="footer-main">
+    <a href="mailto:info@itcygest.com" className="contact-btn">Contact Us</a>
+    <span className="separator">|</span>
+    <span>Email: info@itcygest.com</span>
+    <span className="separator">|</span>
+    <span>Phone: +1 514 249 7972</span>
+    <span className="separator">|</span>
+    <Link to="/privacy">Privacy Policy</Link>
+  </div>
+  <div className="footer-bottom">
+    <p>© 2025 IT Cygest. All rights reserved.</p>
+  </div>
+</footer>
   );
 }
 

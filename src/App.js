@@ -10,6 +10,7 @@ import FeatureGrid from './components/FeatureGrid';
 import Faq from './components/Faq';
 import AboutUs from "./components/AboutUs";
 import Footer from './components/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy'; // ou ./pages/PrivacyPolicy selon l'emplacement
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <>
               <ProductCards />
               <FeatureGrid />
+              
             </>
           )} />
           <Route path="/faq" component={Faq} />
@@ -30,6 +32,7 @@ function App() {
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/references" component={References} />
           <Route path="/aboutus" component={AboutUs} />
+          <Route path="/privacy" component={PrivacyPolicy} />
         </Switch>
         <Footer/>
       </div>
