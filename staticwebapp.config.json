@@ -1,4 +1,14 @@
 {
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": [
+      "/assets/*",
+      "/favicon.ico",
+      "/robots.txt",
+      "/sitemap.xml",
+      "/manifest.json"
+    ]
+  },
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "DENY",
